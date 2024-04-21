@@ -22,6 +22,15 @@ main() {
             sudo vim /etc/pacman.conf
         elif type nano >/dev/null 2>&1; then
             sudo nano /etc/pacman.conf
+        else
+            echo "No known text editor found. What do you want to install? (1: neovim, 2: vim, 3: nano)"
+            read -p "default=1> " -n 1 texteditor
+            case "$texteditor" in
+            1) sudo pacman -Syyu neovim;;
+            2) sudo pacman -Syyu vim;;
+            3) sudo pacman -Syyu nano;;
+            *) echo "Are you sure? The installation will be cancelled." ;;
+            esac
         fi
 
         yay -S audacity blender discord dolphin fcitx5-im fcitx5-mozc firefox gimp google-chrome konsole lmms noto-fonts-cjk noto-fonts-emoji obs-studio plasma steam-native-runtime thunderbird tuxclocker unityhub
