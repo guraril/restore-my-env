@@ -24,11 +24,8 @@ main() {
             sudo nano /etc/pacman.conf
         fi
 
-        yay -S audacity blender discord dolphin fcitx5-im fcitx5-mozc firefox gimp google-chrome konsole lmms noto-fonts-cjk noto-fonts-emoji obs-studio plasma steam-native-runtime thunderbird tuxclocker ufw unityhub
+        yay -S audacity blender discord dolphin fcitx5-im fcitx5-mozc firefox gimp google-chrome konsole lmms noto-fonts-cjk noto-fonts-emoji obs-studio plasma steam-native-runtime thunderbird tuxclocker unityhub
         sudo bash -c "echo XMODIFIERS=@im=fcitx5 > /etc/environment"
-
-        sudo ufw default deny
-        sudo ufw enable
 
         read -p "Please type your git username> " username
         read -p "Please type your git email> " email
