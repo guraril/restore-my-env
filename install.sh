@@ -29,7 +29,6 @@ main() {
             1) sudo pacman -Syyu neovim;;
             2) sudo pacman -Syyu vim;;
             3) sudo pacman -Syyu nano;;
-            *) echo "Are you sure? The installation will be cancelled." ;;
             esac
         fi
 
