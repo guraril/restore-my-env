@@ -39,6 +39,8 @@ main() {
         read -p "Please type your git email> " email
         git config --global user.name $username
         git config --global user.email $email
+        
+        sudo systemctl enable sddm
     else
         echo "Unknown distribution. Please use Arch Linux"
     fi
