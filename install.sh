@@ -44,7 +44,7 @@ main() {
             fi
         fi
 
-        yay -S audacity blender discord dolphin fcitx5-im fcitx5-mozc firefox gimp google-chrome konsole lmms noto-fonts-cjk noto-fonts-emoji obs-studio plasma steam-native-runtime thunderbird tuxclocker unityhub visual-studio-code-bin
+        yay -S ark audacity blender discord dolphin fcitx5-im fcitx5-mozc firefox gimp google-chrome konsole lmms noto-fonts-cjk noto-fonts-emoji obs-studio plasma spectacle steam-native-runtime thunderbird tuxclocker unityhub visual-studio-code-bin
         sudo bash -c "echo XMODIFIERS=@im=fcitx5 > /etc/environment"
 
         read -p "Please type your git username> " username
